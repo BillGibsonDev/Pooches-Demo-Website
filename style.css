@@ -194,12 +194,12 @@ header nav a:hover {
 }
 #contact form label input{
     height: 40px;
-    background: var(--accentColor2);
-    border-radius: 8px;
 }
-#contact form label textarea {
+#contact form label textarea, #contact form label input {
+    padding: 4px;
     background: var(--accentColor2);
     border-radius: 8px;
+    font-size: 20px;
 }
 #contact form button{
     background: var(--accentColor);
