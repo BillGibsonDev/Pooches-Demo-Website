@@ -3,7 +3,6 @@
     --accentColor2: #FAEDCD;
     --paragraphSize: 20px;
     --paragraph390Size :16px;
-
 }
 * {
     margin: 0;
@@ -31,7 +30,7 @@ p {
     padding: 10px 16px;
     font-weight: 700;
     border-radius: 8px;
-    color: #fff;
+    color: rgb(0, 0, 0);
 }
 .link-btn:hover {
     background: black;
