@@ -31,11 +31,12 @@ p {
     font-weight: 700;
     border-radius: 8px;
     color: rgb(0, 0, 0);
+    transition: 0.2s;
 }
 .link-btn:hover {
     background: black;
-    transition: 0.2s;
     text-decoration: none;
+    color: #fff;
 }
 .section-heading {
     font-size: 48px;
@@ -80,10 +81,10 @@ header nav {
 }
 header nav a {
     color: black;
+    transition: 0.2s;
 }
 header nav a:hover {
     text-decoration: underline;
-    transition: 0.2s;
 }
 
 /* Home */
@@ -118,6 +119,7 @@ header nav a:hover {
     height: 80%;
     width: 40%;
     margin: auto 0 auto auto;
+    border-radius: 8px;
 }
 
 /* services */
@@ -126,9 +128,8 @@ header nav a:hover {
 }
 
 #services .services-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 10px;
+    display: flex;
+    justify-content: space-between;
     width: 100%;
 }
 #services .card {
@@ -138,8 +139,8 @@ header nav a:hover {
     align-items: center;
     background: white;
     text-align: center;
-    padding: 6px;
     height: 350px;
+    width: 30%;
     border-radius: 8px;
 }
 #services .card h5 {
@@ -148,6 +149,7 @@ header nav a:hover {
 }
 #services .card p {
     font-size: 16px;
+    width: 90%;
 }
 
 /* Gallery */ 
@@ -160,7 +162,10 @@ header nav a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 10px;
-    column-gap: 10xp;
+    column-gap: 10px;
+}
+#gallery img {
+    width: 100%;
 }
 
 /*  Contact Section*/
@@ -209,6 +214,7 @@ header nav a:hover {
     border: none;
     font-size: 20px;
     cursor: pointer;
+    transition: 0.2s;
 }
 #contact form button:hover{
     background: black;
@@ -283,7 +289,7 @@ footer .icons-container a {
         height: 70vh;
     }
     #home .text-container {
-        width: 90%;
+        width: 100%;
     }
     #home .text-container h2 {
         font-size: 36px;
@@ -292,7 +298,7 @@ footer .icons-container a {
         font-size: 20px;
     }
     #home img {
-        height: 80%;
+        height: 70%;
         width: 100%;
         position: absolute;
         z-index: -1;
@@ -305,20 +311,14 @@ footer .icons-container a {
         height: 100%;
     }
     #services .services-wrapper {
-        grid-template-columns: 1fr;
-        row-gap: 10px;
+        width: 100%;
+        flex-direction: column;
     }
     #services .card {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: white;
-        text-align: center;
-        padding: 6px;
-        height: 350px;
-        border-radius: 8px;
+        width: 100%;
+        margin: 20px auto;
     }
+
     /* Gallery Section */
     #gallery .gallery-wrapper {
         grid-template-columns: 1fr;
@@ -341,6 +341,9 @@ footer .icons-container a {
     }
     .info-wrapper .info-container{
         justify-content: center;
+    }
+    .info-wrapper .info-container h6{
+        font-size: 16px;
     }
     #contact .contact-wrapper .icons-container, .info-wrapper h5 {
         display: none;
